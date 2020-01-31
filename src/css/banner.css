@@ -1,0 +1,56 @@
+.border {
+  height: 80px;
+  width: 40%;
+  border: 12px solid rgb(238,1,4);
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240,130,34);
+  border: 1px solid rgb(240,130,34);
+  border-radius: 50px;
+  margin: auto;
+  font-family: 'advanced_led_board';
+  text-shadow: 0 0 .15em rgb(0,0,0,0.4), 0 0 0.15em rgb(0,0,0,0.4);
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: rgb(228,245,0);
+  box-shadow:    inset 0 0 7px #000000;
+}
+
+/* change .screen to .screen-winner when winner */
+.winner {
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{ color: rgb(228,245,0); }
+    60%{ color: transparent; }
+    100%{ color: transparent; }
+    100%{ color: transparent; }
+    100%{ color: rgb(228,245,0); }
+}
+
+span {
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  padding-right: 7px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 29%;
+  border: 20px solid rgb(240,100,60);
+  border-radius: 50%;
+  background-color: rgb(253,234,37);
+  color: rgb(240,100,60);
+  text-shadow: 1px 1px 2px rgb(240,100,60), 0 0 .08em rgb(0,0,0,0.7), 0 0 0.08em rgb(0,0,0,0.7);
+  font-size: 60px;
+  line-height: 1.25em;
+  font-weight: 700;
+  box-shadow: inset 0 0 7px rgba(0,0,0,1), 0 0 7px rgba(0,0,0,1);
+}
